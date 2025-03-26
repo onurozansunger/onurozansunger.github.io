@@ -14,12 +14,12 @@ body {
 }
 
 header {
-  padding-top: 3rem;
+  padding: 5rem 1rem 2rem;
 }
 
 header h1 {
   font-size: 4rem;
-  margin-bottom: 2rem;
+  margin: 0;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
   letter-spacing: 3px;
 }
@@ -37,13 +37,22 @@ header h1 {
   margin-top: 1rem;
   color: #f3f3f3;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .taskbar {
-  margin-top: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
   display: flex;
   justify-content: center;
   gap: 2rem;
+  padding: 1rem 0;
+  z-index: 1000;
   font-size: 1.1rem;
 }
 
@@ -75,7 +84,7 @@ footer a:hover {
 
 .section {
   max-width: 900px;
-  margin: 3rem auto;
+  margin: 6rem auto 3rem;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 2rem;
   border-radius: 1rem;
@@ -87,7 +96,7 @@ footer a:hover {
   width: 100%;
   max-width: 600px;
   margin: 2rem auto;
-  min-height: 400px;
+  min-height: 320px;
 }
 
 .slider img {
@@ -103,7 +112,7 @@ footer a:hover {
 }
 
 .slider-buttons {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .slider-buttons button {
@@ -126,7 +135,7 @@ footer a:hover {
 .contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   justify-content: flex-start;
   padding-left: 2rem;
 }
@@ -135,6 +144,7 @@ footer a:hover {
   width: 24px;
   height: 24px;
   margin-right: 1rem;
+  object-fit: contain;
 }
 
 .contact-item a {
