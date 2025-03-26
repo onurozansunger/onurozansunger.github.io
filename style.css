@@ -24,7 +24,7 @@ header h1 {
   font-size: 3.5rem;
   font-weight: bold;
   margin-top: 1rem;
-  color: #ffe082;
+  color: white;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
 }
 
@@ -35,21 +35,85 @@ header h1 {
   text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 }
 
-.nav-links {
-  margin-top: 4rem;
-  font-size: 1.2rem;
+.taskbar {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.1rem;
 }
 
-.nav-links a {
-  margin: 0 1rem;
-  color: #facc15;
+.taskbar a {
+  color: white;
   text-decoration: none;
-  font-weight: bold;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+
+.taskbar a:hover {
+  border-bottom: 2px solid white;
 }
 
 footer {
   margin-top: 6rem;
   font-size: 0.9rem;
   color: #ccc;
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  max-width: 900px;
+  margin: 3rem auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  min-height: 400px;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 10px;
+  display: none;
+  object-fit: contain;
+  max-height: 100%;
+}
+
+.slider img.active {
+  display: block;
+}
+
+.slider-buttons {
+  margin-top: 1rem;
+}
+
+.slider-buttons button {
+  background-color: #facc15;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.credit {
+  font-size: 0.8rem;
+  color: #bbb;
+  margin-top: 3rem;
 }
