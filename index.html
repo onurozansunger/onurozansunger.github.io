@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ROMA DİRENİŞ - Roma Direniş</title>
+  <title>Roma Direniş</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,17 +12,39 @@
     <h1>ROMA DİRENİŞ</h1>
   </header>
 
-  <div class="section">
-    
+  <div id="countdown" class="countdown"></div>
+  <p class="date-text">29 Mart 2025 - Piazza dell' Esquilino - Saat: 11:00</p>
+
+  <div class="taskbar">
+    <a href="iletisim.html">İletişim</a>
+    <a href="katkida-bulunanlar.html">Katkıda Bulunanlar</a>
+    <a href="duyurular.html">Duyurular</a>
   </div>
 
-  
-<div class="taskbar">
-  <a href="index.html" class="active">Ana Sayfa</a>
-  <a href="iletisim.html" class="">İletişim</a>
-  <a href="katkida-bulunanlar.html" class="">Katkıda Bulunanlar</a>
-  <a href="duyurular.html" class="">Duyurular</a>
-</div>
+  <footer>
+    <p>© 2025 Roma Direniş</p>
+  </footer>
 
+  <script>
+    const targetDate = new Date("2025-03-29T11:00:00").getTime();
+    const countdown = document.getElementById("countdown");
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance <= 0) {
+        countdown.innerText = "Eylem başladı!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerText = `${days}g ${hours}s ${minutes}d ${seconds}sn`;
+    }, 1000);
+  </script>
 </body>
 </html>
