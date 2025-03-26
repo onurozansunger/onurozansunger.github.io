@@ -156,3 +156,8 @@ footer a:hover {
 .contact-item a:hover {
   text-decoration: underline;
 }
+
+.taskbar a.active {
+  border-bottom: 2px solid #facc15;
+  font-weight: bold;
+}

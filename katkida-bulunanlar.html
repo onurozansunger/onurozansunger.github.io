@@ -1,11 +1,19 @@
 
+<div class="taskbar">
+  <a href="index.html" class="">Ana Sayfa</a>
+  <a href="iletisim.html" class="">İletişim</a>
+  <a href="katkida-bulunanlar.html" class="active">Katkıda Bulunanlar</a>
+  <a href="duyurular.html" class="">Duyurular</a>
+</div>
+
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Katkıda Bulunanlar - Roma Direniş</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -14,7 +22,10 @@
 
   <div class="section">
     <ul style="list-style: none; padding: 0;">
-      <li>Katılan herkese çok teşekkür ederiz</li>
+      <li>Ayşe Y.</li>
+      <li>Emre K.</li>
+      <li>Roma Kolektif Grubu</li>
+      <li>İsimsiz Destekçiler</li>
     </ul>
 
     <div class="slider">
@@ -44,6 +55,7 @@
   <div class="taskbar">
     <a href="index.html">Ana Sayfa</a>
     <a href="iletisim.html">İletişim</a>
+    <a href="katkida-bulunanlar.html" class="active">Katkıda Bulunanlar</a>
     <a href="duyurular.html">Duyurular</a>
   </div>
 
@@ -67,7 +79,7 @@
       showSlide(currentSlide);
     }
 
-    setInterval(nextSlide, 5000);
+    showSlide(currentSlide);
   </script>
 </body>
 </html>
