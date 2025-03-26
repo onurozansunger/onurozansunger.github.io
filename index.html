@@ -1,1 +1,71 @@
-Hello World
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roma Direniş</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>ROMA DİRENİŞ</h1>
+    <p>Türkiye’deki direnişe Roma’dan destek</p>
+  </header>
+
+  <section>
+    <h2>Sonraki Eylem</h2>
+    <div id="countdown" style="font-size: 1.5rem; font-weight: bold; color: #b91c1c;"></div>
+    <p>Tarih: 30 Mart 2025 - Piazza Venezia - Saat: 16:00</p>
+  </section>
+
+  <section>
+    <h2>Dayanışmaya Katıl</h2>
+    <p>
+      WhatsApp grubumuz:
+      <a href="#">Katılmak için tıkla</a>
+    </p>
+    <p>
+      Görüş ve öneriler:
+      <a href="mailto:romadirenis@mail.com">romadirenis@mail.com</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Fotoğraflar</h2>
+    <div class="gallery">
+      <img src="img/foto1.jpg" alt="Eylem 1">
+      <img src="img/foto2.jpg" alt="Eylem 2">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Roma Direniş |
+    <a href="katkida-bulunanlar.html">Katkıda Bulunanlar</a>
+  </footer>
+
+  <script>
+    const targetDate = new Date("2025-03-30T16:00:00").getTime();
+    const countdown = document.getElementById("countdown");
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance <= 0) {
+        countdown.innerText = "Eylem başladı!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerText = `${days}g ${hours}s ${minutes}d ${seconds}sn`;
+    }, 1000);
+  </script>
+
+</body>
+</html>
