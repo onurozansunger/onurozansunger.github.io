@@ -2,31 +2,110 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Duyurular - Roma Direniş</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .announcement {
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 2rem auto;
+      max-width: 600px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .announcement:hover {
+      background-color: rgba(255,255,255,0.1);
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.85);
+    }
+
+    .modal-content {
+      background-color: #111;
+      margin: 5% auto;
+      padding: 1rem;
+      border: 1px solid #888;
+      width: 90%;
+      max-width: 800px;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    .modal-content img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-
-    <div class="taskbar">
-      <a href="index.html" class="">Ana Sayfa</a>
-      <a href="iletisim.html" class="">İletişim</a>
-      <a href="katkida-bulunanlar.html" class="">Katkıda Bulunanlar</a>
-      <a href="duyurular.html" class="active">Duyurular</a>
-    </div>
-    
-
-
+  <div class="taskbar">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="iletisim.html">İletişim</a>
+    <a href="katkida-bulunanlar.html">Katkıda Bulunanlar</a>
+    <a href="duyurular.html" class="active">Duyurular</a>
+  </div>
 
   <header>
     <h1>Duyurular</h1>
   </header>
 
   <div class="section">
-    <p>Buraya ilerleyen zamanlarda duyurular eklenecektir.</p>
+    <div class="announcement" onclick="document.getElementById('modal').style.display='block'">
+      📢 <strong>Mücadele Daha Bitmedi!</strong><br>
+      29 Mart 2025, Piazza di Esquilino, 11:00 - 13:00
+    </div>
   </div>
 
-  
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+      <h2>MÜCADELE DAHA BİTMEDİ</h2>
+      <p><strong>Nerede:</strong> Piazza di Esquilino, ROMA</p>
+      <p><strong>Ne Zaman:</strong> 29 Mart 2025, 11:00 - 13:00</p>
+      <p><strong>Mesaj:</strong> Haklarımız için tekrar sokaktayız!</p>
+      <img src="img/IMG_1448.jpeg" alt="Mücadele Daha Bitmedi">
+    </div>
+  </div>
+
+  <script>
+    // Modal dışında tıklanınca kapansın
+    window.onclick = function(event) {
+      var modal = document.getElementById('modal');
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
