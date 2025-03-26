@@ -6,21 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roma Direniş</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .taskbar {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-size: 1.1rem;
+    }
+    .taskbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 2px solid transparent;
+    }
+    .taskbar a:hover {
+      border-bottom: 2px solid white;
+    }
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>ROMA DİRENİŞ</h1>
-    <div id="countdown"></div>
-    <p class="date-text">29 Mart 2025 - Piazza dell' Esquilino - Saat: 11:00</p>
   </header>
 
-  <div class="nav-links">
+  <div id="countdown" class="countdown"></div>
+  <p class="date-text">29 Mart 2025 - Piazza dell' Esquilino - Saat: 11:00</p>
+
+  <div class="taskbar">
     <a href="iletisim.html">İletişim</a>
     <a href="katkida-bulunanlar.html">Katkıda Bulunanlar</a>
   </div>
 
   <footer>
-    © 2025 Roma Direniş
+    <p>© 2025 Roma Direniş</p>
   </footer>
 
   <script>
