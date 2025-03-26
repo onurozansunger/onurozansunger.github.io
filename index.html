@@ -1,58 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roma Direniş</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
     <h1>ROMA DİRENİŞ</h1>
-    <p>Türkiye’deki direnişe Roma’dan destek</p>
   </header>
 
-  <section>
-    <h2>Sonraki Eylem</h2>
-    <div id="countdown" style="font-size: 1.5rem; font-weight: bold; color: #b91c1c;"></div>
-    <p>Tarih: 29 Mart 2025 - Piazza dell' Esquilino - Saat: 11:00</p>
-  </section>
-
-  <section>
-    <h2>Dayanışmaya Katıl</h2>
-    <p>
-      WhatsApp grubumuz:  
-      <a href="https://chat.whatsapp.com/GOuOXPT8tUzJGk9VZ8n7NK" target="_blank">
-        Katılmak için tıkla
-      </a>
-    </p>
-    <p>
-      Instagram hesabımız:  
-      <a href="https://www.instagram.com/italiadirenis?igsh=MTB0YWZ0M3kyM25odA" target="_blank">
-        @italiadirenis
-      </a>
-    </p>
-    <p>
-      İletişim:  
-      <a href="mailto:italiaderenis@gmail.com">italiaderenis@gmail.com</a>
-    </p>
-    <p>
-      Görüş ve öneriler:  
-      <a href="mailto:onurozansunger@gmail.com">onurozansunger@gmail.com</a>
-    </p>
-  </section>
-
-  <section>
-    <h2>Fotoğraflar</h2>
-    <div class="gallery">
-      <img src="img/foto1.jpg" alt="Eylem 1">
-      <img src="img/foto2.jpg" alt="Eylem 2">
-    </div>
-  </section>
+  <div class="countdown-container">
+    <div id="countdown"></div>
+    <p style="font-size: 1.2rem;">29 Mart 2025 - Piazza dell' Esquilino - Saat: 11:00</p>
+  </div>
 
   <footer>
-    © 2025 Roma Direniş |
+    <a href="iletisim.html">İletişim</a> | 
     <a href="katkida-bulunanlar.html">Katkıda Bulunanlar</a>
   </footer>
 
@@ -77,6 +43,5 @@
       countdown.innerText = `${days}g ${hours}s ${minutes}d ${seconds}sn`;
     }, 1000);
   </script>
-
 </body>
 </html>

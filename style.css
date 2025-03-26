@@ -1,43 +1,60 @@
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
-  color: #222;
   margin: 0;
   padding: 0;
-}
-header {
-  background-color: #b91c1c;
+  font-family: 'Segoe UI', sans-serif;
   color: white;
-  padding: 2rem;
+  background: url('img/ataturk.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
   text-align: center;
+  padding: 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
 }
-h1, h2 {
-  margin: 0.5em 0;
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 2px;
 }
+
+.countdown-container {
+  text-align: center;
+  margin-top: 4rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#countdown {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.section {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
 a {
-  color: #1d4ed8;
-  text-decoration: underline;
+  color: #93c5fd;
+  text-decoration: none;
 }
-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
+
 footer {
-  background-color: #f3f4f6;
-  color: #555;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
   font-size: 0.9rem;
-}
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1rem;
-}
-.gallery img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-top: 4rem;
 }
