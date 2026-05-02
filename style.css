@@ -232,6 +232,56 @@ a:hover { text-decoration: underline; }
   font-weight: 600;
 }
 
+/* ---------- Timeline (experience) ---------- */
+.timeline {
+  position: relative;
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--border);
+}
+
+.tl-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+.tl-item::before {
+  content: "";
+  position: absolute;
+  left: -1.6rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg-elev);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.tl-date {
+  color: var(--accent-2);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.3rem;
+}
+
+.tl-content h3 {
+  margin: 0 0 0.2rem;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.tl-org {
+  color: var(--accent);
+  font-size: 0.95rem;
+  margin: 0 0 0.6rem;
+}
+
+.tl-content p { margin: 0 0 0.6rem; }
+
 /* ---------- Contact list ---------- */
 .contact-list {
   list-style: none;
