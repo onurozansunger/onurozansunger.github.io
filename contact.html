@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Onur Ozan Sünger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="taskbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <section class="section">
+    <h2>Get in Touch</h2>
+    <p class="muted">Feel free to reach out — for collaborations, questions, or just to say hi.</p>
+
+    <ul class="contact-list">
+      <li>
+        <span class="ci-label">Email</span>
+        <a href="mailto:onurozansunger@gmail.com">onurozansunger@gmail.com</a>
+      </li>
+      <li>
+        <span class="ci-label">GitHub</span>
+        <a href="https://github.com/onurozansunger" target="_blank" rel="noopener">github.com/onurozansunger</a>
+      </li>
+      <li>
+        <span class="ci-label">Twitter</span>
+        <a href="https://twitter.com/ozanforreal" target="_blank" rel="noopener">@ozanforreal</a>
+      </li>
+      <li>
+        <span class="ci-label">Location</span>
+        <span>Roma, Italia</span>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Onur Ozan Sünger</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
