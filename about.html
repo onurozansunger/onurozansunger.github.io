@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Onur Ozan Sünger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="taskbar">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="section">
+    <h2>About Me</h2>
+    <p>
+      I'm a Data Science MSc student at <strong>Sapienza University of Rome</strong>,
+      passionate about turning data into useful, intelligent systems.
+      My main interests sit at the intersection of <em>machine learning</em>,
+      <em>deep learning</em> and <em>reinforcement learning</em>, with a soft spot for
+      computer vision applications.
+    </p>
+
+    <h3>Education</h3>
+    <ul class="info-list">
+      <li><strong>MSc in Data Science</strong> — Sapienza University of Rome 🇮🇹</li>
+    </ul>
+
+    <h3>Interests</h3>
+    <ul class="info-list">
+      <li>Machine Learning &amp; Deep Learning</li>
+      <li>Reinforcement Learning</li>
+      <li>Computer Vision</li>
+      <li>Data Mining &amp; Analysis</li>
+    </ul>
+
+    <h3>Tech Stack</h3>
+    <ul class="tags">
+      <li>Python</li>
+      <li>PyTorch</li>
+      <li>TensorFlow</li>
+      <li>scikit-learn</li>
+      <li>OpenCV</li>
+      <li>NumPy</li>
+      <li>pandas</li>
+      <li>SQL</li>
+      <li>Git</li>
+      <li>Jupyter</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Onur Ozan Sünger</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
