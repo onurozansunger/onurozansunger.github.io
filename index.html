@@ -1,57 +1,47 @@
-
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roma Direniş</title>
+  <title>Onur Ozan Sünger</title>
+  <meta name="description" content="Onur Ozan Sünger — Data Science MSc @ Sapienza University of Rome." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <div class="taskbar">
-      <a href="index.html" class="active">Ana Sayfa</a>
-      <a href="iletisim.html" class="">İletişim</a>
-      <a href="katkida-bulunanlar.html" class="">Katkıda Bulunanlar</a>
-      <a href="duyurular.html" class="">Duyurular</a>
+  <nav class="taskbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="hero">
+    <div class="hero-inner">
+      <p class="hello">Hi, I'm</p>
+      <h1>Onur Ozan Sünger</h1>
+      <p class="tagline">Data Science MSc @ Sapienza University of Rome</p>
+      <p class="sub">Machine Learning · Deep Learning · Reinforcement Learning</p>
+
+      <div class="cta">
+        <a href="projects.html" class="btn btn-primary">View Projects</a>
+        <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
+      </div>
+
+      <ul class="socials">
+        <li><a href="https://github.com/onurozansunger" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://twitter.com/ozanforreal" target="_blank" rel="noopener">Twitter</a></li>
+        <li><a href="mailto:onurozansunger@gmail.com">Email</a></li>
+      </ul>
     </div>
-    
-
-
-
-  <header>
-    <h1>ROMA DİRENİŞ</h1>
-  </header>
-
-  <div id="countdown" class="countdown"></div>
-  <p class="date-text">29 Mart 2025 - Piazza dell' Esquilino - Saat: 11:00</p>
-
-  
+  </main>
 
   <footer>
-    <p>© 2025 Roma Direniş</p>
+    <p>© <span id="year"></span> Onur Ozan Sünger · Roma, Italia</p>
   </footer>
 
   <script>
-    const targetDate = new Date("2025-03-29T11:00:00").getTime();
-    const countdown = document.getElementById("countdown");
-
-    setInterval(() => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-
-      if (distance <= 0) {
-        countdown.innerText = "Eylem başladı!";
-        return;
-      }
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      countdown.innerText = `${days}g ${hours}s ${minutes}d ${seconds}sn`;
-    }, 1000);
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
