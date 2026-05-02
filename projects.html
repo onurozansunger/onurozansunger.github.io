@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Onur Ozan Sünger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="taskbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <p class="muted">A selection of things I've built and explored.</p>
+
+    <div class="cards">
+
+      <article class="card">
+        <h3>😄 Facial Emotion Recognition</h3>
+        <p>Real-time facial emotion recognition using a CNN trained on FER2013, deployed with TFLite, and run live via OpenCV webcam input.</p>
+        <p class="tags-inline">Python · TensorFlow · TFLite · OpenCV</p>
+        <a href="https://github.com/onurozansunger/facial-emotion-recognition" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <h3>🎮 Cartpole &amp; Reinforcement Learning</h3>
+        <p>From-scratch implementations of DQN, A2C, DDPG and PPO on the CartPole-v1 environment for hands-on RL study.</p>
+        <p class="tags-inline">Python · PyTorch · OpenAI Gym</p>
+        <a href="https://github.com/onurozansunger/Cartpole-and-RL" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <h3>🔎 Master's Search Engine (ADM-HW3)</h3>
+        <p>Search engine over scraped master's degree programs, comparing keyword, TF-IDF/cosine, and a custom scoring engine.</p>
+        <p class="tags-inline">Python · NLP · Web Scraping</p>
+        <a href="https://github.com/onurozansunger/ADM-HW3-Group-26" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <h3>🎬 Recommendation System (ADM-HW4)</h3>
+        <p>MinHash-based movie recommendation system on Netflix-like access data, including clustering and dimensionality reduction.</p>
+        <p class="tags-inline">Python · MinHash · Clustering</p>
+        <a href="https://github.com/onurozansunger/ADM-HW4-Group-1" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <h3>🕸️ Citation &amp; Collaboration Graphs (ADM-HW5)</h3>
+        <p>Building and analyzing directed citation and weighted collaboration graphs from academic paper data.</p>
+        <p class="tags-inline">Python · Graphs · NetworkX</p>
+        <a href="https://github.com/onurozansunger/ADM-HW5-Group2" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <h3>📊 FDS Netflix Project</h3>
+        <p>End-to-end data-science pipeline on a Netflix dataset: cleaning, feature engineering, feature selection, and modelling.</p>
+        <p class="tags-inline">Python · pandas · scikit-learn</p>
+        <a href="https://github.com/onurozansunger/FDS-PROJECT" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+      </article>
+
+    </div>
+
+    <p class="muted center">More on my <a href="https://github.com/onurozansunger" target="_blank" rel="noopener">GitHub profile</a>.</p>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Onur Ozan Sünger</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
