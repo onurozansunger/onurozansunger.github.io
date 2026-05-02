@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onur Ozan Sünger — Computer Engineer & Data Scientist</title>
+  <meta name="description" content="Personal website of Onur Ozan Sünger — Computer Engineer & Data Science MSc Student at Sapienza University of Rome." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+
+  <nav class="nav">
+    <a href="#home" class="nav-brand">OS<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-inner reveal">
+      <p class="kicker">— Hello, world</p>
+      <h1>I'm <span class="grad">Onur Ozan Sünger</span></h1>
+      <p class="lead">
+        Computer Engineer &amp; Data Science MSc Student building
+        <span class="hl">AI-driven systems</span> at the intersection of machine
+        learning, reinforcement learning and embedded engineering.
+      </p>
+
+      <div class="cta-row">
+        <a href="#projects" class="btn btn-primary">See my work →</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+
+      <div class="quick-meta">
+        <span>📍 Roma, Italia</span>
+        <span>·</span>
+        <span>🎓 Sapienza University of Rome</span>
+        <span>·</span>
+        <a href="https://github.com/onurozansunger" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://linkedin.com/in/ozansunger" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="scroll-cue">scroll ↓</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-num">01 / About</p>
+      <h2 class="section-title reveal">A bit about me</h2>
+
+      <div class="grid-2">
+        <div class="reveal">
+          <p>
+            I'm a hands-on <strong>Computer Engineer</strong> currently pursuing an
+            MSc in Data Science at <strong>Sapienza University of Rome</strong>
+            <span class="muted">(GPA 24/30)</span>, after graduating in Computer
+            Engineering from <strong>OSTIM Technical University</strong>
+            <span class="muted">(GPA 3.04/4.00)</span>.
+          </p>
+          <p>
+            I've built AI-driven systems including a real-time emotion-detection
+            model integrated with Spotify, and worked across backend development
+            and user-interface design during internships at a public institution
+            and an electronics company.
+          </p>
+          <p>
+            I'm particularly drawn to <strong>reinforcement learning, MLOps,
+            and human–computer interaction</strong>.
+          </p>
+
+          <h4>Languages</h4>
+          <ul class="tags">
+            <li>🇹🇷 Turkish — Native</li>
+            <li>🇬🇧 English — C1</li>
+            <li>🇮🇹 Italian — A2</li>
+            <li>🇩🇪 German — A1</li>
+          </ul>
+        </div>
+
+        <div class="reveal">
+          <h4>Key competencies</h4>
+          <ul class="tags">
+            <li>Machine Learning &amp; AI</li>
+            <li>Reinforcement Learning</li>
+            <li>Computer Vision</li>
+            <li>Backend Development</li>
+            <li>Embedded Systems</li>
+            <li>Flutter / UI&UX</li>
+          </ul>
+
+          <h4>Tech stack</h4>
+          <ul class="tags tags-tech">
+            <li>Python</li>
+            <li>C/C++</li>
+            <li>Java</li>
+            <li>PyTorch</li>
+            <li>TensorFlow</li>
+            <li>scikit-learn</li>
+            <li>OpenCV</li>
+            <li>Flutter</li>
+            <li>Spring Boot</li>
+            <li>PostgreSQL</li>
+            <li>Docker</li>
+            <li>Linux</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <p class="section-num">02 / Experience</p>
+      <h2 class="section-title reveal">Where I've worked</h2>
+
+      <div class="timeline">
+
+        <article class="tl-item reveal">
+          <div class="tl-date">Feb 2024 – Jun 2024</div>
+          <div class="tl-content">
+            <h3>AI Developer <span class="muted">— Self Project</span></h3>
+            <p class="tl-org">Sapienza University of Rome</p>
+            <p>
+              Real-time AI model that detects user emotions through webcam input
+              and plays context-aware playlists via the <strong>Spotify API</strong>.
+              Used Python, OpenCV and deep-learning techniques for emotion
+              recognition, with reinforcement-learning principles for adaptive
+              behavior, deployed behind a friendly UI.
+            </p>
+            <p class="chips">Python · OpenCV · Deep Learning · Spotify API · RL</p>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-date">Jan 2023 – Jun 2023</div>
+          <div class="tl-content">
+            <h3>Computer Engineering Intern</h3>
+            <p class="tl-org">KAREL Electronics — Ankara, Turkey</p>
+            <p>
+              R&amp;D on embedded devices in <strong>C/C++</strong> on Linux, plus
+              an internal monitoring website built in HTML/CSS.
+            </p>
+            <p class="chips">C/C++ · Linux · Embedded · HTML/CSS</p>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-date">Jul 2022 – Jan 2023</div>
+          <div class="tl-content">
+            <h3>Software Intern</h3>
+            <p class="tl-org">Presidency of Revenue Administration — Ankara, Turkey</p>
+            <p>
+              Contributed to government-scale information systems and an
+              <strong>ML-powered CV-filtering web application</strong> using
+              Python, PostgreSQL, Spring Boot, Docker and Java. Wrote backend logic
+              for secure data handling.
+            </p>
+            <p class="chips">Python · Java · Spring Boot · PostgreSQL · Docker</p>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-date">2021 – 2022</div>
+          <div class="tl-content">
+            <h3>President <span class="muted">— IEEE OSTIMTECH Student Branch</span></h3>
+            <p class="tl-org">OSTIM Technical University</p>
+            <p>Organized technical webinars, networking events and hackathons.</p>
+            <p class="chips">Leadership · Event Organization · Community</p>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-date">2020</div>
+          <div class="tl-content">
+            <h3>Robotics Project — DGI-6</h3>
+            <p class="tl-org">OSTIM Technical University</p>
+            <p>
+              Multi-purpose transporting robot, awarded <em>"Best Marketable
+              Project"</em> at the University Presentation Day. Led both the
+              software and the hardware integration.
+            </p>
+            <p class="chips">Robotics · Hardware · Software Integration</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section-num">03 / Projects</p>
+      <h2 class="section-title reveal">Selected work</h2>
+
+      <div class="cards">
+
+        <article class="card reveal">
+          <div class="card-icon">😄</div>
+          <h3>Facial Emotion Recognition</h3>
+          <p>Real-time facial emotion recognition using a CNN trained on FER2013, deployed with TFLite, run live via OpenCV.</p>
+          <p class="chips">Python · TensorFlow · TFLite · OpenCV</p>
+          <a href="https://github.com/onurozansunger/facial-emotion-recognition" target="_blank" rel="noopener" class="card-link">GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">🎵</div>
+          <h3>Emotion-Aware Spotify Player</h3>
+          <p>Detects emotions through the webcam and plays context-aware playlists via the Spotify API, with adaptive RL-driven behavior.</p>
+          <p class="chips">Python · OpenCV · Deep Learning · Spotify API · RL</p>
+          <span class="card-link muted">Self project · 2024</span>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">🎮</div>
+          <h3>Cartpole &amp; Reinforcement Learning</h3>
+          <p>From-scratch DQN, A2C, DDPG and PPO implementations on the CartPole-v1 environment for hands-on RL study.</p>
+          <p class="chips">Python · PyTorch · OpenAI Gym</p>
+          <a href="https://github.com/onurozansunger/Cartpole-and-RL" target="_blank" rel="noopener" class="card-link">GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">🤖</div>
+          <h3>DGI-6 Transporting Robot</h3>
+          <p>Multi-purpose transporting robot. Awarded "Best Marketable Project" at the University Presentation Day. Software + hardware integration.</p>
+          <p class="chips">Robotics · Hardware · Embedded</p>
+          <span class="card-link muted">University project · 2020</span>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">🔎</div>
+          <h3>Master's Programs Search Engine</h3>
+          <p>Three search engines (keyword, TF-IDF/cosine, custom score) over scraped master's-degree data. Team project.</p>
+          <p class="chips">Python · NLP · Web Scraping</p>
+          <a href="https://github.com/onurozansunger/ADM-HW3-Group-26" target="_blank" rel="noopener" class="card-link">GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">🎬</div>
+          <h3>Movie Recommender (MinHash)</h3>
+          <p>From-scratch MinHash recommendation system on Netflix-like access data, with feature engineering and clustering. Team project.</p>
+          <p class="chips">Python · MinHash · Clustering · k-means</p>
+          <a href="https://github.com/onurozansunger/ADM-HW4-Group-1" target="_blank" rel="noopener" class="card-link">GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">🕸️</div>
+          <h3>Citation &amp; Collaboration Graphs</h3>
+          <p>Building and analyzing citation/collaboration networks: centrality, shortest paths, graph disconnection, community detection. Team project.</p>
+          <p class="chips">Python · NetworkX · Graphs</p>
+          <a href="https://github.com/onurozansunger/ADM-HW5-Group2" target="_blank" rel="noopener" class="card-link">GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">📊</div>
+          <h3>FDS Netflix Project</h3>
+          <p>End-to-end data-science pipeline on a Netflix dataset: cleaning, feature engineering, feature selection and modelling.</p>
+          <p class="chips">Python · pandas · scikit-learn</p>
+          <a href="https://github.com/onurozansunger/FDS-PROJECT" target="_blank" rel="noopener" class="card-link">GitHub →</a>
+        </article>
+
+      </div>
+
+      <p class="muted center small-top">More projects on my <a href="https://github.com/onurozansunger" target="_blank" rel="noopener">GitHub profile ↗</a></p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container narrow">
+      <p class="section-num">04 / Contact</p>
+      <h2 class="section-title reveal">Let's talk</h2>
+      <p class="reveal">
+        I'm always open to interesting conversations — research collaborations,
+        full-time roles, or just an idea you want to bounce around.
+      </p>
+
+      <a href="mailto:onurozansunger@gmail.com" class="big-cta reveal">
+        onurozansunger@gmail.com
+      </a>
+
+      <ul class="contact-grid reveal">
+        <li>
+          <span class="ci-label">LinkedIn</span>
+          <a href="https://linkedin.com/in/ozansunger" target="_blank" rel="noopener">linkedin.com/in/ozansunger</a>
+        </li>
+        <li>
+          <span class="ci-label">GitHub</span>
+          <a href="https://github.com/onurozansunger" target="_blank" rel="noopener">github.com/onurozansunger</a>
+        </li>
+        <li>
+          <span class="ci-label">Twitter</span>
+          <a href="https://twitter.com/ozanforreal" target="_blank" rel="noopener">@ozanforreal</a>
+        </li>
+        <li>
+          <span class="ci-label">Location</span>
+          <span>Roma, Italia</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Onur Ozan Sünger · Designed &amp; built with care</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
